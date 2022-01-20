@@ -10,7 +10,7 @@ window.onload = function() {
 };
 
 // Eleccion del numero y del palo
-const Numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+const Numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const Symbols = ["diamond", "spade", "hearth", "club"];
 
 const Random = arr => {
