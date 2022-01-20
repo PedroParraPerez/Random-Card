@@ -1,13 +1,6 @@
-/* eslint-disable */
-import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  console.log("Hello Rigo from the console!");
-};
+window.onload = function() {};
 
 // Eleccion del numero y del palo
 const Numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
