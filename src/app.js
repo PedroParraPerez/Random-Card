@@ -28,7 +28,6 @@ color();
 
 const button = document.querySelector(".button");
 button.addEventListener("click", e => {
-  e.preventDefault();
   console.log("enviar");
 //   No consigo ejecutar las funciones randoms al presionar el boton pero al pulsar el boton si que reacciona y escribe en la consola enviar
 });
