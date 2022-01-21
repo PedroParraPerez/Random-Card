@@ -30,4 +30,5 @@ const button = document.querySelector(".button");
 button.addEventListener("click", e => {
   e.preventDefault();
   console.log("enviar");
+//   No consigo ejecutar las funciones randoms al presionar el boton
 });
