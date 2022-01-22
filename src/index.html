@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Card Generate</title>
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Licorice&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="title">
+      <span><b>Generador de cartas aleatorio</b></span>
+    </div>
     <div class="wrap">
       <div class="yugi">
-        <img
+        <!-- <img
           id="yugi"
           src="https://m.media-amazon.com/images/I/61Spc8JiJ4L._AC_SY879_.jpg"
           alt=""
-        />
+        /> -->
       </div>
-      <div class="title">
-        <span><b>Generador de cartas aleatorio</b></span>
-      </div>
-      <div class="div_btn">
+
+      <div class="div_bRefresh ">
         <input type="button" value="Refresh" class="buttonRefresh" />
       </div>
       <div class="card">
@@ -54,6 +61,8 @@
         <option value="Q">Q</option>
         <option value="K">K</option>
       </select>
+    </div>
+    <div class="div_bselect">
       <button id="buttonselect">Give me this card!</button>
     </div>
   </body>

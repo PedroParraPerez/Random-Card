@@ -1,36 +1,25 @@
 body {
   height: 70rem;
-  background-color: green;
+  background-image: linear-gradient(
+    64.5deg,
+    rgba(245, 116, 185, 1) 14.7%,
+    rgba(89, 97, 223, 1) 88.7%
+  );
 }
 .wrap {
   width: 20rem;
   height: 33rem;
   margin: auto;
-  margin-top: 10%;
   padding-top: 1%;
   border-radius: 10pt;
-  box-shadow: 1rem 1rem rgb(8, 92, 8);
-  background-color: rgb(128, 128, 128);
 }
 .title {
-  margin-top: 2%;
+  padding-top: 5%;
   text-align: center;
   margin: auto;
-}
-.div_btn {
-  margin-top: 5%;
-  display: flex;
-  justify-content: center;
-}
-.buttonRefresh {
-  height: 2rem;
-  border-radius: 3pt;
-  background-color: red;
+  font-family: "Lobster", cursive;
   color: white;
-  cursor: pointer;
-}
-.buttonRefresh:hover {
-  background: rgb(53, 16, 187);
+  font-size: 250%;
 }
 .card {
   width: 80%;
@@ -38,13 +27,19 @@ body {
   margin: auto;
   margin-top: 5%;
   border-radius: 5pt;
-  background-color: white;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(90, 92, 106, 1) 0%,
+    rgba(32, 45, 58, 1) 81.3%
+  );
+  color: white;
 }
 
 #div_Number1 {
   padding-left: 5%;
   height: 33%;
-  font-size: 450%;
+  font-size: 430%;
+  font-family: "Lobster", cursive;
 }
 .div_Icon {
   height: 32%;
@@ -55,9 +50,10 @@ body {
 #div_Number2 {
   height: 32%;
   text-align: right;
-  padding-right: 5%;
-  padding-top: 15%;
-  font-size: 450%;
+  padding-right: 8%;
+  padding-top: 12%;
+  font-size: 430%;
+  font-family: "Lobster", cursive;
 }
 .red {
   color: #ff0000;
@@ -80,20 +76,17 @@ body {
   }
 }
 
-.select {
-  display: flex;
-
-  width: 100%;
-
-  margin-top: 1rem;
-  display: block;
+/* .buttonRefresh {
+  height: 2rem;
+  border-radius: 3pt;
+  background-color: red;
+  color: white;
+  cursor: pointer;
 }
-select {
-  width: 3rem;
-  display: flex;
-  margin: auto;
-}
-#buttonselect {
+.buttonRefresh:hover {
+  background: rgb(53, 16, 187);
+} */
+/* #buttonselect {
   display: flex;
   margin: auto;
   margin-top: 1rem;
@@ -101,4 +94,139 @@ select {
   background-color: red;
   color: white;
   cursor: pointer;
+} */
+.div_bRefresh {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonRefresh {
+  background-image: linear-gradient(
+    to right,
+    #283048 0%,
+    #859398 51%,
+    #283048 100%
+  );
+}
+.buttonRefresh {
+  margin: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.buttonRefresh:hover {
+  cursor: pointer;
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.select {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#SelectColor {
+  background-color: #4e4e4e;
+  color: #fff;
+  font-size: inherit;
+  padding: 0.5em;
+  padding-right: 2.5em;
+  border: 0;
+  margin-right: 1rem;
+  border-radius: 3px;
+  text-indent: 0.01px;
+}
+
+#SelectColor::after {
+  /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 1em;
+  font-size: 0.625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -0.5em;
+}
+
+#SelectColor::before {
+  /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+#SelectNumber {
+  background-color: #4e4e4e;
+  color: #fff;
+  font-size: inherit;
+  padding: 0.5em;
+  padding-right: 2.5em;
+  border: 0;
+  border-radius: 3px;
+  text-indent: 0.01px;
+}
+
+#SelectNumber::after {
+  /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 1em;
+  font-size: 0.625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -0.5em;
+}
+
+#SelectNumber::before {
+  /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.div_bselect {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#buttonselect {
+  background-image: linear-gradient(
+    to right,
+    #283048 0%,
+    #859398 51%,
+    #283048 100%
+  );
+
+  margin: auto;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+#buttonselect:hover {
+  cursor: pointer;
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
