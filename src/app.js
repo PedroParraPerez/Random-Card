@@ -32,7 +32,7 @@ let color = v => {
 color();
 
 // Refresh botton
-// PROBLEMA: NO ME CAMBIA EL COLOR DEL ICONO
+// PROBLEMA: NO ME CAMBIA EL COLOR DEL ICONO (HAY ALGUNA FORMA DE LLAMAR A LA FUNCION DEL PRINCIPIO SIN QUE ME DE EL MISMO NUMERO?)
 
 const buttonRefresh = document.querySelector(".buttonRefresh");
 buttonRefresh.addEventListener("click", e => {
