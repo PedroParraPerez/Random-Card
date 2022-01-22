@@ -1,14 +1,15 @@
 body {
+  height: 70rem;
   background-color: green;
 }
 .wrap {
-  width: 320px;
-  height: 520px;
+  width: 20rem;
+  height: 33rem;
   margin: auto;
   margin-top: 10%;
   padding-top: 1%;
   border-radius: 10pt;
-  box-shadow: 10px 10px rgb(8, 92, 8);
+  box-shadow: 1rem 1rem rgb(8, 92, 8);
   background-color: rgb(128, 128, 128);
 }
 .title {
@@ -21,14 +22,14 @@ body {
   display: flex;
   justify-content: center;
 }
-.button {
-  height: 30px;
+.buttonRefresh {
+  height: 2rem;
   border-radius: 3pt;
   background-color: red;
   color: white;
   cursor: pointer;
 }
-.button:hover {
+.buttonRefresh:hover {
   background: rgb(53, 16, 187);
 }
 .card {
@@ -77,4 +78,27 @@ body {
   100% {
     transform: translateX(150rem);
   }
+}
+
+.select {
+  display: flex;
+
+  width: 100%;
+
+  margin-top: 1rem;
+  display: block;
+}
+select {
+  width: 3rem;
+  display: flex;
+  margin: auto;
+}
+#buttonselect {
+  display: flex;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 3pt;
+  background-color: red;
+  color: white;
+  cursor: pointer;
 }
