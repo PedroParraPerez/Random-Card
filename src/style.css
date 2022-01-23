@@ -55,9 +55,6 @@ body {
   font-size: 430%;
   font-family: "Lobster", cursive;
 }
-.red {
-  color: #ff0000;
-}
 
 #yugi {
   position: absolute;
@@ -76,25 +73,6 @@ body {
   }
 }
 
-/* .buttonRefresh {
-  height: 2rem;
-  border-radius: 3pt;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-}
-.buttonRefresh:hover {
-  background: rgb(53, 16, 187);
-} */
-/* #buttonselect {
-  display: flex;
-  margin: auto;
-  margin-top: 1rem;
-  border-radius: 3pt;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-} */
 .div_bRefresh {
   margin-top: 5%;
   display: flex;
@@ -128,6 +106,31 @@ body {
   color: #fff;
   text-decoration: none;
 }
+.rotate {
+  -webkit-animation: rotate-center 0.5s cubic-bezier(0.77, 0, 0.175, 1) both;
+  animation: rotate-center 0.5s cubic-bezier(0.77, 0, 0.175, 1) both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
 .select {
   display: flex;
@@ -148,24 +151,8 @@ body {
   text-indent: 0.01px;
 }
 
-#SelectColor::after {
-  /*  Custom dropdown arrow */
-  content: "\25BC";
-  height: 1em;
-  font-size: 0.625em;
-  line-height: 1;
-  right: 1.2em;
-  top: 50%;
-  margin-top: -0.5em;
-}
-
-#SelectColor::before {
-  /*  Custom dropdown arrow cover */
-  width: 2em;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: 0 3px 3px 0;
+#SelectColor:hover {
+  cursor: pointer;
 }
 #SelectNumber {
   background-color: #4e4e4e;
@@ -178,26 +165,9 @@ body {
   text-indent: 0.01px;
 }
 
-#SelectNumber::after {
-  /*  Custom dropdown arrow */
-  content: "\25BC";
-  height: 1em;
-  font-size: 0.625em;
-  line-height: 1;
-  right: 1.2em;
-  top: 50%;
-  margin-top: -0.5em;
+#SelectNumber:hover {
+  cursor: pointer;
 }
-
-#SelectNumber::before {
-  /*  Custom dropdown arrow cover */
-  width: 2em;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: 0 3px 3px 0;
-}
-
 .div_bselect {
   display: flex;
   width: 100%;
@@ -212,7 +182,6 @@ body {
     #859398 51%,
     #283048 100%
   );
-
   margin: auto;
   padding: 10px 20px;
   text-align: center;
