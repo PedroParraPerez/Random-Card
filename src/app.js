@@ -31,9 +31,9 @@ color();
 // Refresh botton
 
 const buttonRefresh = document.querySelector(".buttonRefresh");
+const card = document.querySelector(".card");
 
 buttonRefresh.addEventListener("click", e => {
-  const card = document.querySelector(".card");
   const RefreshNumber = Numbers[Random(Numbers)];
   const RefreshSymbol = Symbols[Random(Symbols)];
   document.querySelector("#Number1").innerHTML = RefreshNumber;
@@ -57,17 +57,17 @@ const Scolor = document.querySelector("#SelectColor");
 const Snumber = document.querySelector("#SelectNumber");
 const buttonselect = document.querySelector("#buttonselect");
 
+const Slcolor = v => {
+  if (Scolor.value == "♥" || Scolor.value == "♦") {
+    document.querySelector("#icon").style.color = "red";
+  } else {
+    document.querySelector("#icon").style.color = "white";
+  }
+};
+
 buttonselect.addEventListener("click", e => {
   document.querySelector("#Number1").innerHTML = Snumber.value;
   document.querySelector("#Number2").innerHTML = Snumber.value;
   document.querySelector("#icon").innerHTML = Scolor.value;
-
-  const Slcolor = v => {
-    if (Scolor.value == "♥" || Scolor.value == "♦") {
-      document.querySelector("#icon").style.color = "red";
-    } else {
-      document.querySelector("#icon").style.color = "white";
-    }
-  };
   Slcolor();
 });
