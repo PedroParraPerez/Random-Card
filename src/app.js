@@ -40,7 +40,10 @@ buttonRefresh.addEventListener("click", e => {
   document.querySelector("#Number2").innerHTML = RefreshNumber;
   document.querySelector("#icon").innerHTML = RefreshSymbol;
 
-  card.classList.replace("rotate1", "rotate2");
+  card.classList.remove("rotate");
+  window.requestAnimationFrame(function() {
+    card.classList.add("rotate");
+  });
 
   const color = v => {
     if (RefreshSymbol == "♥" || RefreshSymbol == "♦") {
@@ -69,5 +72,9 @@ buttonselect.addEventListener("click", e => {
   document.querySelector("#Number1").innerHTML = Snumber.value;
   document.querySelector("#Number2").innerHTML = Snumber.value;
   document.querySelector("#icon").innerHTML = Scolor.value;
+  card.classList.remove("rotate");
+  window.requestAnimationFrame(function() {
+    card.classList.add("rotate");
+  });
   Slcolor();
 });
