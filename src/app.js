@@ -33,6 +33,14 @@ color();
 const buttonRefresh = document.querySelector(".buttonRefresh");
 const card = document.querySelector(".card");
 
+const REMOVEROTATE = document.querySelector(".REMOVEROTATE");
+REMOVEROTATE.addEventListener("click", e => {
+  const rotate = e => {
+    e.classList.remove("rotate");
+  };
+  rotate(card);
+});
+
 buttonRefresh.addEventListener("click", e => {
   const RefreshNumber = Numbers[Random(Numbers)];
   const RefreshSymbol = Symbols[Random(Symbols)];
@@ -40,11 +48,10 @@ buttonRefresh.addEventListener("click", e => {
   document.querySelector("#Number2").innerHTML = RefreshNumber;
   document.querySelector("#icon").innerHTML = RefreshSymbol;
 
-  card.classList.remove("rotate");
-  window.requestAnimationFrame(function() {
-    card.classList.add("rotate");
-  });
-
+  const rotate = e => {
+    e.classList.add("rotate");
+  };
+  rotate(card);
   const color = v => {
     if (RefreshSymbol == "♥" || RefreshSymbol == "♦") {
       document.querySelector("#icon").style.color = "red";
