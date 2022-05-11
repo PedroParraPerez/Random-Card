@@ -56,42 +56,22 @@ body {
   font-family: "Lobster", cursive;
 }
 
-#yugi {
-  position: absolute;
-  padding-left: 0.6rem;
-  margin-top: 5rem;
-  height: 27rem;
-  animation: slide-right 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s forwards;
-}
-
-@keyframes slide-right {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(150rem);
-  }
-}
-
-.div_bRefresh {
+div.buttonRefresh {
   margin-top: 5%;
   display: flex;
   justify-content: center;
 }
 
-.buttonRefresh {
+button.buttonRefresh {
+  margin: 10px;
+  padding: 10px 20px;
   background-image: linear-gradient(
     to right,
     #283048 0%,
     #859398 51%,
     #283048 100%
   );
-}
-.buttonRefresh {
-  margin: 10px;
-  padding: 10px 20px;
-  text-align: center;
-  text-transform: uppercase;
+
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
@@ -106,21 +86,12 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
 .rotate {
   -webkit-animation: rotate-center 0.5s cubic-bezier(0.77, 0, 0.175, 1) both;
   animation: rotate-center 0.5s cubic-bezier(0.77, 0, 0.175, 1) both;
 }
 
-@-webkit-keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 @keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
@@ -132,14 +103,14 @@ body {
   }
 }
 
-.select {
+.wrapselect {
   display: flex;
   width: 100%;
   justify-content: center;
   margin-top: 1rem;
 }
 
-#SelectColor {
+.dropdown {
   background-color: #4e4e4e;
   color: #fff;
   font-size: inherit;
@@ -151,31 +122,18 @@ body {
   text-indent: 0.01px;
 }
 
-#SelectColor:hover {
+.dropdown:hover {
   cursor: pointer;
-}
-#SelectNumber {
-  background-color: #4e4e4e;
-  color: #fff;
-  font-size: inherit;
-  padding: 0.5em;
-  padding-right: 2.5em;
-  border: 0;
-  border-radius: 3px;
-  text-indent: 0.01px;
 }
 
-#SelectNumber:hover {
-  cursor: pointer;
-}
-.div_bselect {
+div.buttonselect {
   display: flex;
   width: 100%;
   justify-content: center;
   margin-top: 1rem;
 }
 
-#buttonselect {
+button.buttonselect {
   background-image: linear-gradient(
     to right,
     #283048 0%,
