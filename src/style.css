@@ -5,6 +5,8 @@ body {
     rgba(245, 116, 185, 1) 14.7%,
     rgba(89, 97, 223, 1) 88.7%
   );
+  object-fit: contain;
+  margin-bottom: 100rem;
 }
 .wrap {
   width: 20rem;

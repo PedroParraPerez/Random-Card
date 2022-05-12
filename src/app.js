@@ -43,9 +43,12 @@ buttonRefresh.addEventListener("click", e => {
   document.querySelector("#icon").innerHTML = RefreshSymbol;
 
   // remove and add animations
-  card.classList.remove("rotate");
+
   window.requestAnimationFrame(function() {
     card.classList.add("rotate");
+    setTimeout(() => {
+      card.classList.remove("rotate");
+    }, 500);
   });
   // Change color in sumbols
   const color = v => {
@@ -64,13 +67,16 @@ const Snumber = document.querySelector("#SelectNumber");
 const buttonselect = document.querySelector("#buttonselect");
 
 buttonselect.addEventListener("click", e => {
+  window.requestAnimationFrame(function() {
+    card.classList.add("rotate");
+  });
+  setTimeout(() => {
+    card.classList.remove("rotate");
+  }, 500);
   document.querySelector("#Number1").innerHTML = Snumber.value;
   document.querySelector("#Number2").innerHTML = Snumber.value;
   document.querySelector("#icon").innerHTML = Scolor.value;
   card.classList.remove("rotate");
-  window.requestAnimationFrame(function() {
-    card.classList.add("rotate");
-  });
   Slcolor();
 });
 
@@ -89,6 +95,7 @@ const smallsize = () => {
   document.querySelector("#div_Number1").style.fontSize = "2rem";
   document.querySelector(".div_Icon").style.fontSize = "2rem";
   document.querySelector("#div_Number2").style.fontSize = "2rem";
+  card.classList.remove("rotate");
 };
 const middlesize = () => {
   document.querySelector(".card").style.width = "80%";
@@ -96,6 +103,7 @@ const middlesize = () => {
   document.querySelector("#div_Number1").style.fontSize = "5rem";
   document.querySelector(".div_Icon").style.fontSize = "6rem";
   document.querySelector("#div_Number2").style.fontSize = "5rem";
+  card.classList.remove("rotate");
 };
 const biggersize = () => {
   document.querySelector(".card").style.width = "120%";
@@ -103,6 +111,7 @@ const biggersize = () => {
   document.querySelector("#div_Number1").style.fontSize = "8rem";
   document.querySelector(".div_Icon").style.fontSize = "9rem";
   document.querySelector("#div_Number2").style.fontSize = "8rem";
+  card.classList.remove("rotate");
 };
 
 const smallsizebutton = document.querySelector("#small");
