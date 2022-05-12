@@ -18,8 +18,41 @@
       <span><b>Random card generator</b></span>
     </div>
     <div class="wrap">
+      <div class="size">
+        <h4 class="titlesize">CARD SIZE</h4>
+        <button class="btn" id="small">PEQUEÑA</button
+        ><button class="btn" id="middle">MEDIANA</button
+        ><button class="btn" id="bigger">GRANDE</button>
+      </div>
+      <div class="wrapselect">
+        <select class="dropdown" id="SelectColor">
+          <option value="♣">♣</option>
+          <option value="♠">♠</option>
+          <option value="♥">♥</option>
+          <option value="♦">♦</option>
+        </select>
+        <select class="dropdown" id="SelectNumber">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="J">J</option>
+          <option value="Q">Q</option>
+          <option value="K">K</option>
+        </select>
+      </div>
+      <div class="buttonselect">
+        <button class="btn" id="buttonselect">GIVE ME THIS CARD!</button>
+      </div>
+
       <div class="buttonRefresh ">
-        <button class="buttonRefresh">REFRESH</button>
+        <button class="btn" id="buttonRefresh">RANDOM CARD</button>
       </div>
       <div class="card">
         <div class="Numbers" id="div_Number1">
@@ -30,32 +63,6 @@
           <span id="Number2"> </span>
         </div>
       </div>
-    </div>
-    <div class="wrapselect">
-      <select class="dropdown" id="SelectColor">
-        <option value="♣">♣</option>
-        <option value="♠">♠</option>
-        <option value="♥">♥</option>
-        <option value="♦">♦</option>
-      </select>
-      <select class="dropdown" id="SelectNumber">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-        <option value="J">J</option>
-        <option value="Q">Q</option>
-        <option value="K">K</option>
-      </select>
-    </div>
-    <div class="buttonselect">
-      <button class="buttonselect">Give me this card!</button>
     </div>
   </body>
 </html>

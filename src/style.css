@@ -38,21 +38,21 @@ body {
 #div_Number1 {
   padding-left: 5%;
   height: 33%;
-  font-size: 430%;
+  font-size: 5rem;
   font-family: "Lobster", cursive;
 }
 .div_Icon {
   height: 32%;
   text-align: center;
-  font-size: 500%;
+  font-size: 6rem;
   padding-top: 10%;
 }
 #div_Number2 {
-  height: 32%;
+  height: 33%;
   text-align: right;
   padding-right: 8%;
-  padding-top: 12%;
-  font-size: 430%;
+  padding-top: 1rem;
+  font-size: 5rem;
   font-family: "Lobster", cursive;
 }
 
@@ -62,7 +62,7 @@ div.buttonRefresh {
   justify-content: center;
 }
 
-button.buttonRefresh {
+button.btn {
   margin: 10px;
   padding: 10px 20px;
   background-image: linear-gradient(
@@ -77,10 +77,9 @@ button.buttonRefresh {
   color: white;
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
-  display: block;
 }
 
-.buttonRefresh:hover {
+.btn:hover {
   cursor: pointer;
   background-position: right center; /* change the direction of the change here */
   color: #fff;
@@ -132,28 +131,12 @@ div.buttonselect {
   justify-content: center;
   margin-top: 1rem;
 }
-
-button.buttonselect {
-  background-image: linear-gradient(
-    to right,
-    #283048 0%,
-    #859398 51%,
-    #283048 100%
-  );
-  margin: auto;
-  padding: 10px 20px;
+div.size {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
+  padding-right: 4rem;
 }
-
-#buttonselect:hover {
-  cursor: pointer;
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
+.titlesize {
+  padding-right: 2rem;
 }
